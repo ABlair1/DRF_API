@@ -158,7 +158,6 @@ class FizzBuzzTestCase(APITestCase):
             format="json",
         )
         fb_id = json.loads(post_response.content)["fizzbuzz_id"]
-        print("fb_id", fb_id)
 
         # Get fizzbuzz with id
         get_response = self.client.get(self.url + fb_id + "/")
