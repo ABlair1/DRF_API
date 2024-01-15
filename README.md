@@ -15,6 +15,7 @@ Change directory to project and sync database \
 Run dev server \
 `python manage.py runserver`
 
+ 
 ## Testing
 Use the Browsable API to test the API endpoints in the browser:
 - GET a list of all FizzBuzz objects or POST to create a new FizzBuzz at `http://127.0.0.1:8000/fizzbuzz/`
@@ -23,6 +24,7 @@ Use the Browsable API to test the API endpoints in the browser:
 Run a suite of unit tests via the CLI with the following command: \
 `python manage.py test`
 
+ 
 ## Documentation
 ### FizzBuzz Properties
 | Key | Date Type | Description |
@@ -32,6 +34,7 @@ Run a suite of unit tests via the CLI with the following command: \
 | useragent | char(200) | String representation of the HTTP User-Agent header value for the browser request sent to create the FizzBuzz. |
 | message | text | String representation of the message sent in the request body to create the FizzBuzz. |
 
+ 
 ### API Endpoints
 **GET** a list of all FizzBuzz objects \
 Path: `http://127.0.0.1:8000/fizzbuzz/` \
@@ -103,3 +106,4 @@ Response Status Codes:
 - 400 Bad Request - The request body or headers did not contain the required information or the request body contained additional fields that are not allowed. **Only the "message" field is allowed in a POST request body. The request must have a User-Agent header value.**
 - 500 Internal Server Error - The request was properly formed, but the server failed to create a new FizzBuzz.
 
+*Updated 01-15-2024*
